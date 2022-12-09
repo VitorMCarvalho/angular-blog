@@ -1,0 +1,33 @@
+*{
+  background-color: #111111;
+}
+.conteiner-big-card{
+  width: 300px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 10px;
+}
+.big-card-img > img{
+  height: 300px;
+  width: 100%;
+  background-color: white;
+}
+
+.big-card-title{
+  font-size: 1rem;
+  margin: 10px 10px 0px 10px;
+}
+
+.big-card-description >p{
+  margin: 10px;
+}
+.big-card-description >p >a{
+  color: gray;
+}
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,26 @@
+*{
+    background-color: #111111;
+  }
+.conteiner-small-card{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.small-card-img > img{
+    width: 190px;
+    min-width: 180px;
+    margin-right: 20px;
+}
+.small-card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+}
