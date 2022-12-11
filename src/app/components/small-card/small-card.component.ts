@@ -17,6 +17,7 @@ export class SmallCardComponent implements OnInit {
   title:string = "";
   description:string ="";
   img:string ="";
+  work:string="";
 
 
   setValuesToComponent(id:string|null){
@@ -24,5 +25,6 @@ export class SmallCardComponent implements OnInit {
     this.title = result.title;
     this.description = result.description
     this.img = result.img;
+    this.work = result.work;
   }
 }
