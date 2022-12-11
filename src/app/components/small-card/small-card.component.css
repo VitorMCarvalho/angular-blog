@@ -2,7 +2,7 @@
     background-color: #111111;
   }
 .conteiner-small-card{
-    width: 700px;
+    width: 600px;
     display: flex;
     flex-direction: row;
     border-radius: 20px;

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { dataFake } from './../../data/dataFake';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -6,16 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent implements OnInit {
-Object: any;
 
   constructor() { }
-
+  @Input()
+  Id:string ="";
   ngOnInit(): void {
+    this.setValuesToComponent(this.Id);
   }
+  title:string = "";
+  description:string ="";
+  img:string ="";
 
-  item:object[] = [{
-    img:{
-      img:''
-    }
-  }]
+
+  setValuesToComponent(id:string|null){
+    const result = dataFake.filter(article => article.id == id)[0];
+    this.title = result.title;
+    this.description = result.description
+    this.img = result.img;
+  }
 }
